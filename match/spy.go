@@ -1,6 +1,6 @@
 package match
 
-import "github.com/jmartin82/mmock/definition"
+import "github.com/rukavina/mmock/definition"
 
 type Spy struct {
 	store   Store

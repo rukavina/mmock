@@ -9,7 +9,7 @@ import (
 	"strings"
 
 	urlmatcher "github.com/azer/url-router"
-	"github.com/jmartin82/mmock/definition"
+	"github.com/rukavina/mmock/definition"
 )
 
 type Request struct {

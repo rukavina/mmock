@@ -1,10 +1,12 @@
 package vars
 
 import (
+	"io/ioutil"
+	"log"
 	"regexp"
 	"strings"
 
-	"github.com/jmartin82/mmock/definition"
+	"github.com/rukavina/mmock/definition"
 )
 
 var varsRegex = regexp.MustCompile(`\{\{\s*(.+?)\s*\}\}`)
@@ -14,6 +16,8 @@ type Processor struct {
 }
 
 func (fp Processor) Eval(req *definition.Request, m *definition.Mock) {
+	//load body from file
+	loadBody(&m.Response)
 	requestFiller := fp.FillerFactory.CreateRequestFiller(req, m)
 	fakeFiller := fp.FillerFactory.CreateFakeFiller()
 	holders := fp.walkAndGet(m.Response)
@@ -21,6 +25,19 @@ func (fp Processor) Eval(req *definition.Request, m *definition.Mock) {
 	vars := requestFiller.Fill(holders)
 	fp.mergeVars(vars, fakeFiller.Fill(holders))
 	fp.walkAndFill(m, vars)
+}
+
+func loadBody(res *definition.Response) {
+	if res.Body != "" || res.BodyFileName == "" {
+		return
+	}
+	data, err := ioutil.ReadFile(res.BodyFileName)
+	if err != nil {
+		log.Fatalf("Error reading body file [%s]: %s", res.BodyFileName, err)
+		return
+	}
+	res.Body = string(data)
+	return
 }
 
 func (fp Processor) walkAndGet(res definition.Response) []string {

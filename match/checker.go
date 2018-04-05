@@ -1,7 +1,7 @@
 package match
 
 import (
-	"github.com/jmartin82/mmock/definition"
+	"github.com/rukavina/mmock/definition"
 )
 
 //Checker checks if the received request matches with some specific mock request definition.

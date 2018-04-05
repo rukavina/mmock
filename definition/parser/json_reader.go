@@ -5,7 +5,7 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/jmartin82/mmock/definition"
+	"github.com/rukavina/mmock/definition"
 )
 
 //JSONReader struct created to read json config files

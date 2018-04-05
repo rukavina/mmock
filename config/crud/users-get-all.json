@@ -1,8 +1,8 @@
 {
-    "description": "Gets a persisted entity by matching the id from the url using regex",
+    "description": "Gets all users",
     "request": {
         "method": "GET",
-        "path": "/users/:userid"
+        "path": "/users"
     },
     "response": {
         "statusCode": 200,
@@ -11,6 +11,6 @@
                 "application/json"
             ]
         },
-        "bodyFileName": "config/responses/user.json"
+        "bodyFileName": "config/responses/users.json"
     }
 }

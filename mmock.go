@@ -10,16 +10,16 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/jmartin82/mmock/console"
-	"github.com/jmartin82/mmock/definition"
-	"github.com/jmartin82/mmock/definition/parser"
-	"github.com/jmartin82/mmock/match"
-	"github.com/jmartin82/mmock/scenario"
-	"github.com/jmartin82/mmock/server"
-	"github.com/jmartin82/mmock/statistics"
-	"github.com/jmartin82/mmock/translate"
-	"github.com/jmartin82/mmock/vars"
-	"github.com/jmartin82/mmock/vars/fakedata"
+	"github.com/rukavina/mmock/console"
+	"github.com/rukavina/mmock/definition"
+	"github.com/rukavina/mmock/definition/parser"
+	"github.com/rukavina/mmock/match"
+	"github.com/rukavina/mmock/scenario"
+	"github.com/rukavina/mmock/server"
+	"github.com/rukavina/mmock/statistics"
+	"github.com/rukavina/mmock/translate"
+	"github.com/rukavina/mmock/vars"
+	"github.com/rukavina/mmock/vars/fakedata"
 )
 
 //ErrNotFoundPath error from missing or configuration path

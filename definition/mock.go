@@ -24,7 +24,8 @@ type Request struct {
 type Response struct {
 	StatusCode int `json:"statusCode"`
 	HttpHeaders
-	Body string `json:"body"`
+	Body         string `json:"body"`
+	BodyFileName string `json:"bodyFileName"`
 }
 
 type Scenario struct {

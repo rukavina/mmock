@@ -7,11 +7,11 @@ import (
 	"strings"
 
 	assetfs "github.com/elazarl/go-bindata-assetfs"
-	"github.com/jmartin82/mmock/definition"
-	"github.com/jmartin82/mmock/match"
-	"github.com/jmartin82/mmock/scenario"
-	"github.com/jmartin82/mmock/statistics"
 	"github.com/labstack/echo"
+	"github.com/rukavina/mmock/definition"
+	"github.com/rukavina/mmock/match"
+	"github.com/rukavina/mmock/scenario"
+	"github.com/rukavina/mmock/statistics"
 	"golang.org/x/net/websocket"
 )
 

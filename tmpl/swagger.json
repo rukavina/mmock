@@ -6,7 +6,7 @@
     "description": "Mmock is a testing and fast prototyping tool for developers",
     "license": {
       "name": "MIT",
-      "url": "https://github.com/jmartin82/mmock/blob/master/LICENSE.md"
+      "url": "https://github.com/rukavina/mmock/blob/master/LICENSE.md"
     }
   },
   "host": "localhost:8082",

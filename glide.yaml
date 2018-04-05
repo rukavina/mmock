@@ -1,4 +1,4 @@
-package: github.com/jmartin82/mmock
+package: github.com/rukavina/mmock
 import:
 - package: github.com/azer/url-router
 - package: github.com/elazarl/go-bindata-assetfs

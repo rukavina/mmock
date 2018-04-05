@@ -7,7 +7,7 @@ import (
 	"net/http"
 	"strings"
 
-	"github.com/jmartin82/mmock/definition"
+	"github.com/rukavina/mmock/definition"
 )
 
 //HTTP is and adaptor beteewn the http and mock definition.

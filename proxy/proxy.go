@@ -7,7 +7,7 @@ import (
 	"log"
 	"net/http"
 
-	"github.com/jmartin82/mmock/definition"
+	"github.com/rukavina/mmock/definition"
 )
 
 // Proxy calls to real service

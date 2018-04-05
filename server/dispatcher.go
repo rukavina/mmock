@@ -12,13 +12,13 @@ import (
 	"strconv"
 	"time"
 
-	"github.com/jmartin82/mmock/definition"
-	"github.com/jmartin82/mmock/match"
-	"github.com/jmartin82/mmock/proxy"
-	"github.com/jmartin82/mmock/scenario"
-	"github.com/jmartin82/mmock/statistics"
-	"github.com/jmartin82/mmock/translate"
-	"github.com/jmartin82/mmock/vars"
+	"github.com/rukavina/mmock/definition"
+	"github.com/rukavina/mmock/match"
+	"github.com/rukavina/mmock/proxy"
+	"github.com/rukavina/mmock/scenario"
+	"github.com/rukavina/mmock/statistics"
+	"github.com/rukavina/mmock/translate"
+	"github.com/rukavina/mmock/vars"
 )
 
 //Dispatcher is the mock http server

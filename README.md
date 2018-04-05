@@ -34,6 +34,7 @@ Built with Go - Mmock runs without installation on multiple platforms.
 * Public interface auto discover
 * Lightweight and portable
 * No installation required
+* External body files
 
 ### Example
 
@@ -57,6 +58,26 @@ Mock definition file example:
 }
 
 ```
+
+Or
+
+```json
+{
+	"request": {
+		"method": "GET",
+		"path": "/hello/*"
+	},
+	"response": {
+		"statusCode": 200,
+		"headers": {
+			"Content-Type":["application/json"]
+		},
+		"bodyFileName": "config/responses/users.json"
+	}
+}
+
+```
+
 Or
 
 
@@ -83,7 +104,7 @@ Either:
 Run it from Docker using the provided ```Dockerfile``` or [from Docker Hub](https://hub.docker.com/r/jordimartin/mmock/)
 
 ```
-go get github.com/jmartin82/mmock
+go get github.com/rukavina/mmock
 docker build -t mmock/mmock .
 docker run -v YOUR_ABS_PATH:/config -p 8082:8082 -p 8083:8083  mmock/mmock
 ```
@@ -92,7 +113,7 @@ docker run -v YOUR_ABS_PATH:/config -p 8082:8082 -p 8083:8083  mmock/mmock
 Or run mmock locally from the command line.
 
 ```
-go get github.com/jmartin82/mmock
+go get github.com/rukavina/mmock
 mmock -h
 
 ```
@@ -209,6 +230,7 @@ Query strings and headers support also global matches (*) in the header/paramete
 * *headers*: Array of headers. It allows more than one value for the same key and vars.
 * *cookies*: Array of cookies. It allows vars.
 * *body*: Body string. It allows vars.
+* *bodyFileName*: Instead of `body` content you could defined file path to json file, check examples in `config/crud/`
 
 #### Control (Optional)
 
@@ -492,7 +514,7 @@ Request data:
 
 ### Contributing
 
-Clone this repository to ```$GOPATH/src/github.com/jmartin82/mmock``` and type ```go get .```.
+Clone this repository to ```$GOPATH/src/github.com/rukavina/mmock``` and type ```go get .```.
 
 Requires Go 1.8+ to build.
 

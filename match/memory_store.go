@@ -3,7 +3,7 @@ package match
 import (
 	"sync"
 
-	"github.com/jmartin82/mmock/definition"
+	"github.com/rukavina/mmock/definition"
 )
 
 //MemoryStore stores all received request and their matches in memory until the last reset

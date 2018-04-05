@@ -1,7 +1,7 @@
 package match
 
 import (
-	"github.com/jmartin82/mmock/definition"
+	"github.com/rukavina/mmock/definition"
 )
 
 type Spier interface {

@@ -5,7 +5,7 @@ import (
 	"strings"
 
 	"github.com/ghodss/yaml"
-	"github.com/jmartin82/mmock/definition"
+	"github.com/rukavina/mmock/definition"
 )
 
 //YAMLReader struct created to read yaml config files

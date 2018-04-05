@@ -4,10 +4,10 @@ import (
 	"errors"
 	"strings"
 
-	"github.com/jmartin82/mmock/scenario"
+	"github.com/rukavina/mmock/scenario"
 
 	urlmatcher "github.com/azer/url-router"
-	"github.com/jmartin82/mmock/definition"
+	"github.com/rukavina/mmock/definition"
 	"github.com/ryanuber/go-glob"
 )
 

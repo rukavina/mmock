@@ -8,7 +8,7 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/jmartin82/mmock/vars/fakedata"
+	"github.com/rukavina/mmock/vars/fakedata"
 )
 
 var errMissingParameterValue = errors.New("The requested method needs input parameters which are not supplied!")

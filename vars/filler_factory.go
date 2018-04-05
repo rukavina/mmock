@@ -1,8 +1,8 @@
 package vars
 
 import (
-	"github.com/jmartin82/mmock/definition"
-	"github.com/jmartin82/mmock/vars/fakedata"
+	"github.com/rukavina/mmock/definition"
+	"github.com/rukavina/mmock/vars/fakedata"
 )
 
 type FillerFactory interface {
